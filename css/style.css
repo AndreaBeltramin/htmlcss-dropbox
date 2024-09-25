@@ -14,8 +14,12 @@
 
 h1 {
 	font-size: 4rem;
+	font-weight: bolder;
 }
 
+h2 {
+	font-size: 2.5rem;
+}
 a {
 	text-decoration: none;
 	color: rgb(59, 59, 59);
@@ -27,6 +31,18 @@ a {
 
 button {
 	border-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+i {
+	margin-top: 30px;
+}
+
+li {
+	list-style-type: none;
 }
 
 /*HEADER*/
@@ -47,7 +63,7 @@ button {
 	padding-right: 20px;
 }
 
-.header-item button {
+.btn {
 	background-color: blue;
 	padding: 5px;
 	color: white;
@@ -56,8 +72,60 @@ button {
 /*MAIN*/
 .top-section {
 	background-color: rgb(180, 208, 231);
-	height: 300px;
+	height: 500px;
 	display: flex;
 	align-content: center;
 	justify-content: center;
+	padding-top: 50px;
+}
+
+.proposta-cliente {
+	display: flex;
+	padding-top: 30px;
+	justify-content: space-between;
+}
+
+.prova-gratuita {
+	line-height: 20px;
+}
+
+.prova-gratuita div {
+	margin: 20px 0;
+}
+
+.piano-section {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	padding-top: 80px;
+}
+
+.fa-solid {
+	color: blue;
+}
+
+/*CARD*/
+.cards {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	gap: 2rem;
+}
+.card-singolo {
+	border: 1px solid gray;
+	flex: 1 0 30%;
+	margin-top: 30px;
+}
+
+.card-singolo .card-header {
+	border-bottom: 1px solid gray;
+	text-align: center;
+}
+
+.team {
+	border: 1px solid gray;
+	margin-top: 40px;
+}
+.team-header {
+	border-bottom: apx solid gray;
 }
