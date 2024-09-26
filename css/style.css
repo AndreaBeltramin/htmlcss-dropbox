@@ -24,6 +24,7 @@ h1 {
 
 h2 {
 	font-size: 2.5rem;
+	padding: 20px 0;
 }
 
 a {
@@ -48,9 +49,16 @@ ul {
 	list-style-type: none;
 }
 
+.col-40 {
+	width: 40%;
+}
+
+.col-60 {
+	width: 60%;
+}
+
 /*HEADER*/
 .header-container {
-	min-height: 80px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -63,51 +71,51 @@ ul {
 }
 
 .header-item > a {
-	padding-right: 20px;
+	padding: 0 20px;
 }
 
 .btn {
 	background-color: blue;
-	padding: 5px;
+	padding: 10px;
 	color: white;
 }
 
 /*MAIN*/
-.top-section {
+#hero-section {
 	background-color: rgb(180, 208, 231);
-	height: 500px;
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	padding-top: 50px;
 }
 
-.proposta-cliente {
+#hero-section .container {
+	position: relative;
+	top: 50px;
+}
+
+.hero-content {
 	display: flex;
 	padding-top: 30px;
 	justify-content: space-between;
 }
 
-.prova-gratuita {
-	line-height: 20px;
+.col-40 div {
+	margin: 15px 0;
 }
 
-.prova-gratuita div {
-	margin: 20px 0;
-}
-
-.piano-section {
+#business-plan {
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	padding-top: 80px;
+	padding-top: 100px;
 }
 
-.fa-solidfa-arrow-downfa-2xl {
-	color: blue;
+#business-plan span {
+	padding-right: 20px;
 }
 
 /*CARD*/
+
 .cards {
 	display: flex;
 	justify-content: center;
@@ -121,8 +129,13 @@ ul {
 }
 
 .card-singolo .card-header {
+	padding: 10px;
 	border-bottom: 1px solid gray;
 	text-align: center;
+}
+
+.card-body {
+	padding: 10px;
 }
 
 .team {
@@ -131,8 +144,11 @@ ul {
 }
 .team-header {
 	border-bottom: 1px solid gray;
+	text-align: center;
 }
-
+.team-body {
+	display: flex;
+}
 .partner {
 	display: flex;
 	justify-content: center;
