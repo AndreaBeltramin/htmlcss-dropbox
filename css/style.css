@@ -154,3 +154,34 @@ li {
 	flex: 1 0 30%;
 	margin-top: 30px;
 }
+
+.partner-section {
+	background-color: rgb(204, 201, 201);
+	display: flex;
+	min-height: 300px;
+}
+
+.partner-item {
+	width: calc(100% / 3);
+	min-height: 300px;
+}
+
+.logo-designit {
+	background-size: contain;
+	background-image: url(../img/designit.svg);
+	background-repeat: no-repeat;
+	min-height: 80px;
+}
+.col-sx,
+.col-dx {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	min-height: 300px;
+}
+.col-sx div,
+.col-dx div {
+	width: 50%;
+	height: 50%;
+	padding: 20px 10px;
+}
