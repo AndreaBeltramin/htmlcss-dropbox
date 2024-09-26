@@ -20,13 +20,10 @@ h1 {
 h2 {
 	font-size: 2.5rem;
 }
+
 a {
 	text-decoration: none;
 	color: rgb(59, 59, 59);
-}
-
-.logo {
-	padding-right: 20px;
 }
 
 button {
@@ -35,13 +32,14 @@ button {
 
 img {
 	width: 100%;
+	display: block;
 }
 
 i {
 	margin-top: 30px;
 }
 
-li {
+ul {
 	list-style-type: none;
 }
 
@@ -100,7 +98,7 @@ li {
 	padding-top: 80px;
 }
 
-.fa-solid {
+.fa-solidfa-arrow-downfa-2xl {
 	color: blue;
 }
 
@@ -155,33 +153,83 @@ li {
 	margin-top: 30px;
 }
 
-.partner-section {
+/*BRANDS*/
+.brand-section {
 	background-color: rgb(204, 201, 201);
 	display: flex;
-	min-height: 300px;
+	margin-top: 100px;
 }
 
-.partner-item {
-	width: calc(100% / 3);
-	min-height: 300px;
+.brand-row {
+	display: flex;
 }
-
-.logo-designit {
-	background-size: contain;
-	background-image: url(../img/designit.svg);
-	background-repeat: no-repeat;
-	min-height: 80px;
-}
-.col-sx,
-.col-dx {
+.brand-col {
+	width: calc(100vw / 3);
+	height: calc(100vw / 3);
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
-	min-height: 300px;
 }
-.col-sx div,
-.col-dx div {
+.brand-square {
 	width: 50%;
-	height: 50%;
-	padding: 20px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#prova-gratuita {
+	background-color: lightblue;
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+}
+#prova-gratuita .container {
+	display: flex;
+}
+#prova-gratuita div {
+	width: 50%;
+}
+
+#faq {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.domanda {
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+	line-height: 80px;
+}
+
+#faq h2 {
+	margin-bottom: 50px;
+	border-bottom: 1px solid black;
+}
+
+/*FOOTER*/
+
+.footer {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	padding: 50px;
+}
+.footer .container {
+	color: white;
+	display: flex;
+	justify-content: space-between;
+}
+.footer .container li {
+	line-height: 40px;
+}
+
+.footer .container h3 {
+	line-height: 60px;
+}
+
+.footer-language {
+	border-top: 1px solid white;
+	margin-top: 50px;
+	padding-top: 10px;
+	line-height: 30px;
+	color: darkgray;
 }
