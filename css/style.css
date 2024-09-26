@@ -19,24 +19,28 @@ body {
 
 h1 {
 	font-size: 4rem;
-	font-weight: bolder;
+	font-weight: 900;
+	margin-bottom: 20px;
 }
 
 h2 {
 	font-size: 2.5rem;
 	padding: 20px 0;
+	margin-bottom: 20px;
 }
 
 h3 {
 	font-size: 1.5rem;
+	margin-bottom: 15px;
 }
-a {
-	text-decoration: none;
-	color: rgb(59, 59, 59);
+
+h4 {
+	margin-bottom: 10px;
 }
 
 button {
 	border-style: none;
+	font-size: 1rem;
 }
 
 img {
@@ -60,7 +64,14 @@ ul {
 	width: 60%;
 }
 
+.btn {
+	background-color: blue;
+	padding: 10px;
+	color: white;
+}
+
 /*HEADER*/
+
 .header-container {
 	display: flex;
 	justify-content: space-between;
@@ -75,15 +86,12 @@ ul {
 
 .header-item > a {
 	padding: 0 20px;
-}
-
-.btn {
-	background-color: blue;
-	padding: 10px;
-	color: white;
+	text-decoration: none;
+	color: rgb(53, 53, 53);
 }
 
 /*MAIN*/
+
 #hero-section {
 	background-color: rgb(180, 208, 231);
 	display: flex;
@@ -103,8 +111,14 @@ ul {
 }
 
 .col-40 div {
-	margin: 15px 0;
+	margin: 0 15px 15px 0;
 }
+
+.col-40 button {
+	margin-bottom: 15px;
+}
+
+/* SECTION BUSINESS-PLAN */
 
 #business-plan {
 	display: flex;
@@ -123,35 +137,87 @@ ul {
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	gap: 2rem;
+	gap: 2.5rem;
+	margin-top: 20px;
 }
-.card-singolo {
+
+.card-item {
 	border: 1px solid gray;
 	flex: 1 0 30%;
 	margin-top: 30px;
 }
 
-.card-singolo .card-header {
+.card-item .card-header {
 	padding: 10px;
 	border-bottom: 1px solid gray;
 	text-align: center;
 }
 
+.card-header i {
+	margin: auto;
+}
+
 .card-body {
-	padding: 10px;
+	padding: 25px;
+}
+
+.caratteristiche {
+	margin-top: 20px;
+}
+
+.card-body button {
+	display: block;
+	margin: 20px 0;
+}
+
+.lista-caratteristiche i {
+	color: blue;
+}
+
+.card-footer {
+	margin: 40px 0;
+	border-top: 1px solid black;
+	padding-top: 50px;
 }
 
 .team {
 	border: 1px solid gray;
 	margin-top: 40px;
 }
+
 .team-header {
+	padding: 10px;
 	border-bottom: 1px solid gray;
 	text-align: center;
 }
+
+.team-header i {
+	margin: auto;
+}
+
 .team-body {
 	display: flex;
+	justify-content: space-between;
+	padding: 20px 20px 0;
 }
+
+.col-70 {
+	width: 70%;
+}
+
+.col-30 {
+	width: 30%;
+}
+
+.col-30 button {
+	padding: 10px 30px;
+}
+
+.team-footer {
+	font-size: 1rem;
+	padding: 0 20px 20px 20px;
+}
+
 #partner {
 	display: flex;
 	justify-content: center;
@@ -163,6 +229,7 @@ ul {
 	display: flex;
 	justify-content: center;
 }
+
 .testo-foto {
 	padding: 50px;
 }
@@ -176,7 +243,7 @@ ul {
 
 /*SECTION OPERATIONS*/
 
-.business-cards {
+.operation-cards {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -184,14 +251,14 @@ ul {
 	gap: 2rem;
 	margin-bottom: 80px;
 }
-.strumento {
+.operation-item {
 	flex: 1 0 30%;
-	margin-top: 30px;
 }
 
-.strumento p {
+.operation-item p {
 	margin-top: 20px;
 }
+
 /*BRANDS*/
 
 #brands {
@@ -200,11 +267,14 @@ ul {
 
 #brands .container {
 	margin-top: 100px;
+	width: 50%;
 }
 
 .brand-row {
+	margin-top: 100px;
 	display: flex;
 }
+
 .brand-col {
 	width: calc(100vw / 3);
 	height: calc(100vw / 3);
