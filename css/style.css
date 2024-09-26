@@ -27,6 +27,9 @@ h2 {
 	padding: 20px 0;
 }
 
+h3 {
+	font-size: 1.5rem;
+}
 a {
 	text-decoration: none;
 	color: rgb(59, 59, 59);
@@ -149,16 +152,29 @@ ul {
 .team-body {
 	display: flex;
 }
-.partner {
+#partner {
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	margin: 80px 0;
+	margin: 100px 0;
+}
+
+#partner .container {
+	display: flex;
+	justify-content: center;
 }
 .testo-foto {
-	width: 50%;
-	padding: 40px;
+	padding: 50px;
 }
+
+.testo-foto button {
+	background-color: white;
+	color: gray;
+	margin-top: 30px;
+	border: 1px solid gray;
+}
+
+/*SECTION OPERATIONS*/
 
 .business-cards {
 	display: flex;
@@ -168,16 +184,21 @@ ul {
 	gap: 2rem;
 	margin-bottom: 80px;
 }
-.stumento {
-	border: 1px solid gray;
+.strumento {
 	flex: 1 0 30%;
 	margin-top: 30px;
 }
 
+.strumento p {
+	margin-top: 20px;
+}
 /*BRANDS*/
-.brand-section {
-	background-color: rgb(204, 201, 201);
-	display: flex;
+
+#brands {
+	margin-top: 100px;
+}
+
+#brands .container {
 	margin-top: 100px;
 }
 
